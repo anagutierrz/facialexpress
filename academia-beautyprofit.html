@@ -1,213 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeautyProfit · Finanzas para tu Negocio de Belleza · Facial Express</title>
-  <meta name="description" content="BeautyProfit: el programa de finanzas y gestión para profesionales de belleza que quieren construir un negocio rentable en República Dominicana.">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .bp-hero-content { max-width: 640px; }
-    .bp-detail-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 1px; background: rgba(13,13,13,0.08);
-      margin: 0 56px;
-    }
-    .bp-detail-card {
-      background: var(--white); padding: 40px 36px;
-    }
-    .bp-detail-icon {
-      font-size: 28px; margin-bottom: 16px; display: block;
-    }
-    .bp-detail-title {
-      font-family: var(--serif); font-size: 22px; font-weight: 400;
-      color: var(--black); margin-bottom: 10px;
-    }
-    .bp-detail-text {
-      font-size: 13px; color: var(--mid); line-height: 1.75; font-weight: 300;
-    }
-    .aprende-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 0; background: rgba(13,13,13,0.06);
-      margin: 0 56px;
-    }
-    .aprende-item {
-      background: var(--white); padding: 28px 36px;
-      border-bottom: 0.5px solid rgba(13,13,13,0.08);
-      display: flex; align-items: flex-start; gap: 16px;
-    }
-    .aprende-num {
-      font-family: var(--serif); font-size: 32px; font-weight: 300;
-      color: rgba(13,13,13,0.1); flex-shrink: 0; line-height: 1; margin-top: 4px;
-    }
-    .aprende-text {
-      font-size: 14px; color: var(--dark); line-height: 1.6; font-weight: 300;
-    }
-    .aprende-text strong {
-      font-weight: 500; color: var(--black); display: block; margin-bottom: 4px;
-    }
-    @media (max-width: 900px) {
-      .bp-detail-grid, .aprende-grid { margin: 0 24px; grid-template-columns: 1fr; }
-    }
-  </style>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeautyProfit · Academia Facial Express</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.aprende-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(10,10,10,0.07); margin:0 56px; }
+.aprende-item { background:var(--white); padding:28px 36px; border-bottom:0.5px solid rgba(10,10,10,0.07); display:flex; align-items:flex-start; gap:16px; }
+.aprende-num { font-family:var(--serif); font-size:32px; font-weight:300; color:rgba(10,10,10,0.08); flex-shrink:0; line-height:1; margin-top:4px; }
+.aprende-txt { font-size:13.5px; color:var(--dark); line-height:1.6; font-weight:300; }
+.aprende-txt strong { font-weight:500; color:var(--black); display:block; margin-bottom:4px; }
+@media(max-width:900px){ .aprende-grid{ margin:0 24px; grid-template-columns:1fr; } }
+</style>
 </head>
-<body>
-<script src="components.js"></script>
-
-<!-- HERO -->
-<div class="page-hero" style="background: var(--dark);">
-  <div class="page-hero-img">
-    <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1920&q=80&fit=crop"
-         alt="BeautyProfit Facial Express" style="opacity: 0.35;">
-  </div>
+<body><script src="components.js"></script>
+<div class="page-hero" style="background:var(--dark);">
+  <div class="page-hero-img"><img src="img/expert_editorial.jpg" alt="BeautyProfit" style="opacity:0.3; filter:grayscale(30%)"></div>
   <div class="page-hero-overlay"></div>
-  <div class="page-hero-content bp-hero-content">
+  <div class="page-hero-content">
     <span class="page-breadcrumb">Academia · Programa Especial</span>
     <h1 class="page-title">Beauty<em>Profit</em></h1>
   </div>
 </div>
-
-<!-- INTRO -->
 <div class="intro-block">
-  <div><span class="intro-label" style="color:rgba(13,13,13,0.06); font-size: 64px;">BP</span></div>
+  <div><span class="intro-label" style="background:var(--mirror);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">BP</span></div>
   <div>
+    <div class="silver-rule"></div>
     <h2 class="intro-title">El programa que<br><em>transforma tu negocio</em></h2>
-    <p class="intro-text">BeautyProfit es un programa diseñado exclusivamente para profesionales de belleza que quieren dejar de trabajar mucho para ganar poco y comenzar a construir un negocio realmente rentable.</p>
-    <p class="intro-text">No es un curso de técnicas. Es un programa de finanzas, estrategia y gestión pensado desde la realidad de la industria de la belleza en República Dominicana y Latinoamérica.</p>
-    <a href="https://wa.me/1809000000?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20BeautyProfit." target="_blank" class="btn-dark" style="margin-top: 8px;">Quiero inscribirme</a>
+    <p class="intro-text">BeautyProfit es para profesionales de belleza que quieren dejar de trabajar mucho para ganar poco y comenzar a construir un negocio realmente rentable. No es un curso de técnicas — es un programa de finanzas, estrategia y gestión.</p>
+    <a href="https://wa.me/1809000000?text=BeautyProfit" target="_blank" class="btn-dark">Quiero inscribirme</a>
   </div>
 </div>
-
 <div class="divider"></div>
-
-<!-- LO QUE APRENDERÁS -->
-<section class="section" style="padding-top: 72px;">
+<section class="section" style="padding-top:72px;">
+  <div class="silver-rule"></div>
   <span class="section-tag">Contenido del programa</span>
   <h2 class="section-title">¿Qué<br><em>aprenderás?</em></h2>
 </section>
-
 <div class="aprende-grid">
-  <div class="aprende-item">
-    <span class="aprende-num">01</span>
-    <div class="aprende-text"><strong>Cómo leer los números de tu negocio</strong>Ingresos, egresos, flujo de caja y punto de equilibrio explicados para profesionales de belleza, sin jerga financiera.</div>
-  </div>
-  <div class="aprende-item">
-    <span class="aprende-num">02</span>
-    <div class="aprende-text"><strong>Estructuración de precios</strong>Cómo calcular el precio correcto de cada servicio para que cubra costos, tiempo y te genere ganancia real.</div>
-  </div>
-  <div class="aprende-item">
-    <span class="aprende-num">03</span>
-    <div class="aprende-text"><strong>Control de gastos e inversión</strong>Aprende qué gastos son necesarios, cuáles eliminar y cómo invertir inteligentemente en el crecimiento de tu negocio.</div>
-  </div>
-  <div class="aprende-item">
-    <span class="aprende-num">04</span>
-    <div class="aprende-text"><strong>Agenda y productividad monetaria</strong>Cómo organizar tu agenda para maximizar ingresos sin sacrificar calidad ni bienestar personal.</div>
-  </div>
-  <div class="aprende-item">
-    <span class="aprende-num">05</span>
-    <div class="aprende-text"><strong>Estrategia de crecimiento</strong>Cómo escalar tu negocio: contratar asistentes, abrir espacio propio o crear una línea de cursos.</div>
-  </div>
-  <div class="aprende-item">
-    <span class="aprende-num">06</span>
-    <div class="aprende-text"><strong>Mentalidad financiera</strong>Cómo pensar como empresaria, no solo como técnica. La diferencia entre tener un trabajo y tener un negocio.</div>
-  </div>
+  <div class="aprende-item"><span class="aprende-num">01</span><div class="aprende-txt"><strong>Cómo leer los números</strong>Ingresos, egresos y flujo de caja explicados sin jerga financiera.</div></div>
+  <div class="aprende-item"><span class="aprende-num">02</span><div class="aprende-txt"><strong>Estructuración de precios</strong>Cómo calcular el precio correcto para que cubra costos y genere ganancia real.</div></div>
+  <div class="aprende-item"><span class="aprende-num">03</span><div class="aprende-txt"><strong>Control de gastos</strong>Qué gastos son necesarios, cuáles eliminar y cómo invertir inteligentemente.</div></div>
+  <div class="aprende-item"><span class="aprende-num">04</span><div class="aprende-txt"><strong>Agenda y productividad</strong>Organiza tu agenda para maximizar ingresos sin sacrificar bienestar.</div></div>
+  <div class="aprende-item"><span class="aprende-num">05</span><div class="aprende-txt"><strong>Estrategia de crecimiento</strong>Cómo escalar: contratar asistentes, abrir espacio propio o crear una línea de cursos.</div></div>
+  <div class="aprende-item"><span class="aprende-num">06</span><div class="aprende-txt"><strong>Mentalidad empresarial</strong>La diferencia entre tener un trabajo y tener un negocio que trabaja por ti.</div></div>
 </div>
-
-<!-- INFO CURSO -->
-<section class="section" style="background: var(--light); margin-top: 96px;">
-  <span class="section-tag">Detalles del programa</span>
-  <h2 class="section-title">Todo lo que<br><em>incluye</em></h2>
-  <div class="curso-info-grid">
-    <div class="curso-info-card">
-      <span class="curso-info-label">Modalidad</span>
-      <span class="curso-info-val">Presencial / Online</span>
-    </div>
-    <div class="curso-info-card">
-      <span class="curso-info-label">Duración</span>
-      <span class="curso-info-val">4 semanas</span>
-    </div>
-    <div class="curso-info-card">
-      <span class="curso-info-label">Nivel</span>
-      <span class="curso-info-val">Todos los niveles</span>
-    </div>
-    <div class="curso-info-card">
-      <span class="curso-info-label">Certificado</span>
-      <span class="curso-info-val">Incluido</span>
-    </div>
-  </div>
-
-  <div class="split-section" style="margin-top: 64px; background: transparent;">
-    <div class="split-img" style="height: 440px;">
-      <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=900&q=80&fit=crop"
-           alt="BeautyProfit programa de negocios">
-    </div>
-    <div class="split-content" style="background: var(--white);">
-      <span class="section-tag">El programa incluye</span>
-      <ul class="benefits">
-        <li>Módulos en video accesibles de por vida</li>
-        <li>Plantillas de control financiero editables</li>
-        <li>Calculadora de precios personalizada</li>
-        <li>Sesión de preguntas en vivo</li>
-        <li>Comunidad de alumnas activa</li>
-        <li>Certificado digital de participación</li>
-      </ul>
-      <a href="https://wa.me/1809000000?text=Hola!%20Quiero%20inscribirme%20en%20BeautyProfit." target="_blank" class="btn-dark">Inscribirme ahora</a>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIOS -->
-<section class="section">
+<section class="section test-bg" style="margin-top:96px;">
+  <div class="silver-rule"></div>
   <span class="section-tag">Testimonios</span>
   <h2 class="section-title">Lo que dicen<br><em>nuestras alumnas</em></h2>
   <div class="test-grid">
-    <div class="test-card">
-      <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-      <p class="test-text">"BeautyProfit me hizo darme cuenta de que estaba ganando bien pero ahorrando nada. Todo cambió después del módulo 3."</p>
-      <span class="test-name">Michelle P.</span>
-      <span class="test-type">Participante · BeautyProfit</span>
-    </div>
-    <div class="test-card">
-      <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-      <p class="test-text">"Subí mis precios un 40% después del programa y no perdí ninguna clienta. Eso lo dice todo."</p>
-      <span class="test-name">Daniela F.</span>
-      <span class="test-type">Participante · BeautyProfit</span>
-    </div>
-    <div class="test-card">
-      <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-      <p class="test-text">"La plantilla de control de gastos sola valió toda la inversión. Ahora sé exactamente qué entra y qué sale cada mes."</p>
-      <span class="test-name">Raquel T.</span>
-      <span class="test-type">Participante · BeautyProfit</span>
-    </div>
+    <div class="test-card"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="test-text">"Subí mis precios un 40% y no perdí ninguna clienta. Eso lo dice todo."</p><span class="test-name">Daniela F.</span><span class="test-type">BeautyProfit</span></div>
+    <div class="test-card"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="test-text">"La plantilla de control de gastos sola valió toda la inversión."</p><span class="test-name">Raquel T.</span><span class="test-type">BeautyProfit</span></div>
+    <div class="test-card"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="test-text">"Estaba ganando bien pero ahorrando nada. BeautyProfit cambió todo después del módulo 3."</p><span class="test-name">Michelle P.</span><span class="test-type">BeautyProfit</span></div>
   </div>
 </section>
-
-<!-- FAQ -->
 <section class="faq-section">
   <h2 class="faq-title">Preguntas <em style="font-family:var(--serif)">frecuentes</em></h2>
-  <div class="faq-item">
-    <button class="faq-q">¿Necesito tener conocimientos de finanzas previos?<span>+</span></button>
-    <p class="faq-a">No. BeautyProfit está diseñado para profesionales de la belleza, no para contadoras. Todo se explica en lenguaje claro, con ejemplos reales de la industria.</p>
-  </div>
-  <div class="faq-item">
-    <button class="faq-q">¿Sirve si trabajo sola desde casa o en un salón?<span>+</span></button>
-    <p class="faq-a">Sí, para ambos casos. El programa se adapta a distintas estructuras de negocio, desde trabajadoras independientes hasta dueñas de salón con equipo.</p>
-  </div>
-  <div class="faq-item">
-    <button class="faq-q">¿Cuándo son las próximas fechas?<span>+</span></button>
-    <p class="faq-a">Las fechas varían según la modalidad. Escríbenos por WhatsApp y te informamos sobre la próxima convocatoria disponible.</p>
-  </div>
+  <div class="faq-item"><button class="faq-q">¿Necesito conocimientos de finanzas previos?<span>+</span></button><p class="faq-a">No. Está diseñado para profesionales de la belleza, no para contadoras. Todo en lenguaje claro.</p></div>
+  <div class="faq-item"><button class="faq-q">¿Sirve si trabajo sola desde casa?<span>+</span></button><p class="faq-a">Sí, para independientes y dueñas de salón con equipo. El programa se adapta a tu estructura.</p></div>
+  <div class="faq-item"><button class="faq-q">¿Cuándo son las próximas fechas?<span>+</span></button><p class="faq-a">Escríbenos por WhatsApp para informarte sobre la próxima convocatoria disponible.</p></div>
 </section>
-
-<!-- CTA -->
 <section class="cta-final">
   <h2 class="cta-title"><em>Tu negocio</em><br>merece ser rentable.</h2>
-  <p class="cta-sub">Únete al programa que está cambiando cómo las profesionales de belleza manejan su dinero.</p>
   <div class="cta-btns">
-    <a href="https://wa.me/1809000000?text=Hola!%20Quiero%20inscribirme%20en%20BeautyProfit." target="_blank" class="btn-white">Quiero inscribirme</a>
-    <a href="academia.html" class="btn-ghost-light">Ver todos los programas</a>
+    <a href="https://wa.me/1809000000?text=BeautyProfit" target="_blank" class="btn-white">Quiero inscribirme</a>
+    <a href="academia.html" class="btn-ghost-dark">Ver todos los programas</a>
   </div>
 </section>
-
-</body>
-</html>
+</body></html>
