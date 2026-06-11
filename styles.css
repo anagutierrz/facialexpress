@@ -7,7 +7,7 @@
   --dark:    #141414;
   --dark2:   #1E1E1E;
   --white:   #FFFFFF;
-  --offwhite:#F7F7F7;
+  --offwhite:#FFFFFF;
   --silver:  #C8C8C8;
   --silver2: #A8A8A8;
   --silver3: #787878;
@@ -200,9 +200,9 @@ img  { display: block; width: 100%; height: 100%; object-fit: cover; }
 .bp-card-text { font-size: 12.5px; color: var(--silver4); line-height: 1.65; font-weight: 300; }
 
 /* ── TESTIMONIALS ── */
-.test-bg { background: var(--offwhite); }
+.test-bg { background: var(--white); }
 .test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(10,10,10,0.07); }
-.test-card { background: var(--offwhite); padding: 48px 40px; }
+.test-card { background: var(--white); padding: 48px 40px; border: 0.5px solid rgba(10,10,10,0.07); }
 .stars { display: flex; gap: 5px; margin-bottom: 24px; }
 .star { width: 7px; height: 7px; background: var(--mirror); clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); }
 .test-text { font-family: var(--serif); font-size: 19px; font-weight: 300; font-style: italic; color: var(--dark); line-height: 1.55; margin-bottom: 28px; }
@@ -271,11 +271,11 @@ footer { background: var(--dark); padding: 56px 56px; border-top: 0.5px solid rg
 .intro-text { font-size: 14.5px; color: var(--silver3); line-height: 1.9; font-weight: 300; margin-bottom: 16px; }
 
 /* ── SPLIT 2-COL ── */
-.split-section { display: grid; grid-template-columns: 1fr 1fr; }
+.split-section { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); }
 .split-img { height: 500px; overflow: hidden; }
 .split-img img { filter: grayscale(8%); transition: transform 0.8s cubic-bezier(0.4,0,0.2,1); }
 .split-img:hover img { transform: scale(1.04); }
-.split-content { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--offwhite); }
+.split-content { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
 .split-title { font-family: var(--serif); font-size: clamp(30px, 3.2vw, 42px); font-weight: 300; color: var(--black); margin-bottom: 18px; line-height: 1.1; }
 .split-title em { font-style: italic; }
 .split-text { font-size: 14px; color: var(--silver3); line-height: 1.85; font-weight: 300; margin-bottom: 32px; }
@@ -284,7 +284,7 @@ footer { background: var(--dark); padding: 56px 56px; border-top: 0.5px solid rg
 .benefits li::before { content: ''; width: 18px; height: 0.5px; background: var(--mirror); flex-shrink: 0; }
 
 /* ── FAQ ── */
-.faq-section { padding: 80px 56px; background: var(--offwhite); }
+.faq-section { padding: 80px 56px; background: var(--white); }
 .faq-title { font-family: var(--serif); font-size: 40px; font-weight: 300; margin-bottom: 48px; color: var(--black); }
 .faq-item { border-bottom: 0.5px solid rgba(10,10,10,0.1); }
 .faq-q { width: 100%; background: none; border: none; display: flex; justify-content: space-between; align-items: center; padding: 24px 0; cursor: pointer; text-align: left; font-family: var(--sans); font-size: 13.5px; color: var(--black); font-weight: 400; }
@@ -324,7 +324,7 @@ footer { background: var(--dark); padding: 56px 56px; border-top: 0.5px solid rg
 
 /* ── CURSO INFO ── */
 .curso-info-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(10,10,10,0.08); margin: 48px 0; }
-.curso-info-card { background: var(--offwhite); padding: 28px 28px 32px; }
+.curso-info-card { background: var(--white); border: 0.5px solid rgba(10,10,10,0.08); padding: 28px 28px 32px; }
 .curso-info-label { font-size: 9px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--silver3); margin-bottom: 10px; display: block; }
 .curso-info-val { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--black); }
 
